@@ -1,0 +1,47 @@
+/* -------------------------------------------------------------------------- */
+/*                                GLOBAL STYLES                               */
+/* -------------------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 FONT SETUP                                 */
+/* -------------------------------------------------------------------------- */
+.font-baloo {
+  font-family: 'Baloo Chettan', sans-serif;
+}
+
+.font-baloo-2 {
+  font-family: 'Baloo Chettan 2', sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   MARQUEE                                  */
+/* -------------------------------------------------------------------------- */
+.marquee__container {
+  border-top: 16px solid var(--Primary---100, #f1f8d6);
+  border-right: 1px solid var(--Primary---100, #f1f8d6);
+  border-bottom: 16px solid var(--Primary---100, #f1f8d6);
+  border-left: 1px solid var(--Primary---100, #f1f8d6);
+  background: var(--Primary---500, #64842a);
+  overflow: hidden;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+.marquee__content {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
