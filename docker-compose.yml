@@ -1,0 +1,11 @@
+services:
+  web:
+    container_name: web
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PORT: 3000
+        MODE: "production" # MODE -> production | development
+    ports:
+      - "3000:3000"
